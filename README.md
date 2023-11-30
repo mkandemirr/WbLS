@@ -10,9 +10,12 @@ execution of very broad physics programs for large-scale experiments. We create 
 
 _wbls_: This directory includes all required files for the definition of WbLS in Geant4.
 
-_wbls/data_: This directory includes all data files for chemical and optical properties of WbLS products.
-_wbls/macros_: This directory includes a macro files for each WbLS product. Users can control all products' properties via user interface commands.
+_wbls/data_: This directory includes all data files for the chemical and optical properties of WbLS products.
+
+_wbls/macros_: This directory includes a macro file for each WbLS product. Users can control all products' properties via user interface commands.
+
 _wbls/include_: This directoy includes c++ header files for the definition of WbLS.
+
 _wbls/src_: This directory includes c++ source files for the definition of WbLS.
 
 _example_: This directory includes an example Geant4 application that demonstrates the use of various WbLS products. In this example, a simple box (G4Box) is filled with various WbLS products.
