@@ -69,7 +69,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     
     
   // Alternative method for getting a WbLS product.
-	//for a pure WbLS products 
+  //for a pure WbLS products 
   //G4String path = "wbls/macros/pure/wbls_1pct.mac";
   //WbLSBuilder wblsBuilder(path, true);
   //G4Material* wbls = wblsBuilder.GetProduct();
