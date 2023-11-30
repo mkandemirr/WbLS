@@ -8,7 +8,7 @@ execution of very broad physics programs for large-scale experiments. We create 
              
 ## The package structure:   
 
-_wbls_: This directory includes all required files for the definition of WbLS in Geant4.
+_wbls_: This directory includes all required files for the definition of WbLS in Geant4. People who want to use wbls should copy this directory to the source directory of their project and make the necessary adjustments in the CMakeList.txt file.
 
 _wbls/data_: This directory includes all data files for the chemical and optical properties of WbLS products.
 
