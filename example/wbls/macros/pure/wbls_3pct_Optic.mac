@@ -1,0 +1,24 @@
+#wbls_3pct_Optic
+/control/alias dataDirPath wbls/data/wbls_3pct
+
+/matPropTable/wbls/addProperty SCINTILLATIONCOMPONENT1 {dataDirPath}/scntComp1.txt nm unitless
+/matPropTable/wbls/addProperty SCINTILLATIONCOMPONENT2 {dataDirPath}/scntComp2.txt nm unitless
+/matPropTable/wbls/addProperty SCINTILLATIONCOMPONENT3 {dataDirPath}/scntComp3.txt nm unitless
+/matPropTable/wbls/addProperty RINDEX {dataDirPath}/refIndex.txt nm unitless
+/matPropTable/wbls/addProperty ABSLENGTH {dataDirPath}/absLength.txt nm mm
+/matPropTable/wbls/addProperty RAYLEIGH {dataDirPath}/rsLength.txt nm mm
+
+/matPropTable/wbls/addConstProperty SCINTILLATIONYIELD 502 1/MeV
+/matPropTable/wbls/addConstProperty SCINTILLATIONYIELD1 0.987 
+/matPropTable/wbls/addConstProperty SCINTILLATIONYIELD2 0.012
+/matPropTable/wbls/addConstProperty SCINTILLATIONYIELD3 0.001 
+
+/matPropTable/wbls/addConstProperty SCINTILLATIONTIMECONSTANT1 2.005 ns
+/matPropTable/wbls/addConstProperty SCINTILLATIONTIMECONSTANT2 12.5 ns
+/matPropTable/wbls/addConstProperty SCINTILLATIONTIMECONSTANT3 127.66 ns
+
+/matPropTable/wbls/addConstProperty SCINTILLATIONRISETIME1 0.265 ns
+/matPropTable/wbls/addConstProperty SCINTILLATIONRISETIME2 0.265 ns
+/matPropTable/wbls/addConstProperty SCINTILLATIONRISETIME3 0.265 ns
+
+/matPropTable/wbls/addConstProperty RESOLUTIONSCALE 1.0
