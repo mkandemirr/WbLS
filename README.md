@@ -4,18 +4,18 @@ Water-based liquid scintillator (WbLS) is a novel detection medium that combines
 aspects of liquid scintillators, such as high light yield and low-threshold detection, with the superior sides of
 pure water, such as minimal attenuation, directional reconstruction, and low-cost, into a single target. The
 ability of its scintillator content to be tunable and loaded with several metal isotopes allows the cost-effective
-execution of very broad physics programs for large-scale experiments. We create a custom tool for defining various WbLS cocktails in the Geant4 simulation package, envisioning that this material will be used extensively in this package in the future. With this tool, users can get various WbLS formulations/compositions/cocktails as a G4Material object, including optical properties, with just a single line of code. This tool also presents an elegant way of preparing a predefined scintillator for Geant4 and paves the way for the future creation of a scintillator database.
+execution of very broad physics programs for large-scale experiments. We create a custom tool for defining various WbLS cocktails in the Geant4 simulation package, envisioning that this material will be used extensively in this package in the future. With this tool, users can get various WbLS formulations as a G4Material object, including optical properties, with just a single line of code. This tool also presents an elegant way of preparing a predefined scintillator for Geant4 and paves the way for the future creation of a scintillator database.
              
 ## The package structure:   
 
-_WbLS/wbls_: This directory includes all required files for the definition of WbLS in Geant4.
+_wbls_: This directory includes all required files for the definition of WbLS in Geant4.
 
-_WbLS/wbls/data_: This directory includes all data files for chemical and optical properties of WbLS products.
-_WbLS/wbls/macros_: This directory includes a macro files for each WbLS product. Users can control all products' properties via user interface commands.
-_WbLS/wbls/include_: This directoy includes c++ header files for the definition of WbLS.
-_WbLS/wbls/src_: This directory includes c++ source files for the definition of WbLS.
+_wbls/data_: This directory includes all data files for chemical and optical properties of WbLS products.
+_wbls/macros_: This directory includes a macro files for each WbLS product. Users can control all products' properties via user interface commands.
+_wbls/include_: This directoy includes c++ header files for the definition of WbLS.
+_wbls/src_: This directory includes c++ source files for the definition of WbLS.
 
-_WbLS/examples_: This directory includes an example Geant4 application that demonstrates the use of various WbLS products. In this example, a simple box (G4Box) is filled with various WbLS products.
+_example_: This directory includes an example Geant4 application that demonstrates the use of various WbLS products. In this example, a simple box (G4Box) is filled with various WbLS products.
 
 ## Tested on 
 
