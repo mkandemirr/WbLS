@@ -4,7 +4,7 @@ Water-based liquid scintillator (WbLS) is a novel detection medium that combines
 aspects of liquid scintillators, such as high light yield and low-threshold detection, with the superior sides of
 pure water, such as minimal attenuation, directional reconstruction, and low-cost, into a single target. The
 ability of its scintillator content to be tunable and loaded with several metal isotopes allows the cost-effective
-execution of very broad physics programs for large-scale experiments. We create a custom tool for defining various WbLS cocktails in the Geant4 simulation package, envisioning that this material will be used extensively in this package in the future. With this tool, users can get various WbLS formulations as a G4Material object, including optical properties, with just a single line of code. This tool also presents an elegant way of preparing a predefined scintillator for Geant4 and paves the way for the future creation of a scintillator database.
+execution of very broad physics programs for large-scale experiments. We create a custom tool for defining various WbLS cocktails in the Geant4 simulation package, envisioning that this material will be used extensively in this package in the future. With this tool, users can get various WbLS formulations as a G4Material object, including optical properties, with just a single line of code. 
              
 ## The package structure:   
 
