@@ -51,35 +51,33 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                              simpleBoxSizeZ*0.5
                              );
   
-  /* WbLS factory products 
-  //pure WbLS
-    wbls_1pct
-    wbls_3pct
-    wbls_5pct
+  /* Available products
+  pure WbLS
+  wbls_1pct
+  wbls_3pct
+  wbls_5pct
+  gdDoped WbLS
+  wbls_1pct_gd_01pct
+  wbls_3pct_gd_01pct
+  */  
+   
     
-    //gdDoped WbLS
-    wbls_1pct_gd_01pct
-    wbls_3pct_gd_01pct
+  G4bool enableOpticalProperty = true;
     
-    */
-    
-    G4bool enableOpticalProperty = true;
-    
-    G4Material* wbls = WbLSFactory::GetInstance()->
-                         GetMaterial("wbls_1pct", enableOpticalProperty);
+  G4Material* wbls = WbLSFactory::GetInstance()->
+                      GetMaterial("wbls_1pct", enableOpticalProperty);
     
     
-  /* 
-  G4String path = "wbls/macros/pure/wbls_1pct.mac";
-  WbLSBuilder wblsBuilder(path, true);
-  G4Material* wbls = wblsBuilder.GetProduct();
-  */
+  // Alternative method for getting a WbLS product.
+	//for a pure WbLS products 
+  //G4String path = "wbls/macros/pure/wbls_1pct.mac";
+  //WbLSBuilder wblsBuilder(path, true);
+  //G4Material* wbls = wblsBuilder.GetProduct();
   
-  /*
-  G4String path = "wbls/macros/gdDoped/wbls_1pct_gd_01pct.mac";
-  GdDopedWbLSBuilder* wblsBuilder = new GdDopedWbLSBuilder(path, true);                                                       
-  G4Material* wbls = wblsBuilder->GetProduct();
-  */
+  //for a gdDoped WbLS product
+  //G4String path = "wbls/macros/gdDoped/wbls_1pct_gd_01pct.mac";
+  //GdDopedWbLSBuilder* wblsBuilder = new GdDopedWbLSBuilder(path, true);                                                       
+  //G4Material* wbls = wblsBuilder->GetProduct();
   
   G4cout<<*(G4Material::GetMaterialTable())<<G4endl;
   
