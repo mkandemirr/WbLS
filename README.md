@@ -18,7 +18,7 @@ _wbls/include_: This directoy includes c++ header files for the definition of Wb
 
 _wbls/src_: This directory includes c++ source files for the definition of WbLS.
 
-_example_: This directory includes an example Geant4 application that demonstrates the use of various WbLS products. In this example, a simple box (G4Box) is filled with various WbLS products.
+_example_: This directory includes an example Geant4 application that demonstrates the use of various WbLS products. 
 
 ## Tested on 
 
