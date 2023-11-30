@@ -15,7 +15,7 @@ GdDopedWbLSBuilderMessenger::GdDopedWbLSBuilderMessenger
   : G4UImessenger(), fGdDopedWbLSBuilder(gdDopedWbLSBuilder)
 {
  
-	G4String commandDirectory = "/material/wbls/";
+  G4String commandDirectory = "/material/wbls/";
  
   //-------Command 1----------
   G4String commandName  = "labFraction";
@@ -28,7 +28,7 @@ GdDopedWbLSBuilderMessenger::GdDopedWbLSBuilderMessenger
   fLABFractionCmd->AvailableForStates(G4State_PreInit, G4State_Init);
   fLABFractionCmd->SetToBeBroadcasted(false);
 
-	//-------Command 2----------
+  //-------Command 2----------
   commandName ="ppoFraction";
   commandPath = commandDirectory+commandName;
   usage       = "[usage] "+ commandPath + " PPOFraction";
@@ -67,7 +67,7 @@ GdDopedWbLSBuilderMessenger::GdDopedWbLSBuilderMessenger
 
 GdDopedWbLSBuilderMessenger::~GdDopedWbLSBuilderMessenger()
 {
-	delete fLABFractionCmd;
+  delete fLABFractionCmd;
   delete fPPOFractionCmd;
   delete fWaterFractionCmd;
   delete fGdFractionCmd;
@@ -79,25 +79,25 @@ void GdDopedWbLSBuilderMessenger::SetNewValue(G4UIcommand* command,
                                               G4String newValue
                                               )
 {
-	if(command == fLABFractionCmd)
+  if(command == fLABFractionCmd)
   {
-		fGdDopedWbLSBuilder->SetLABFraction(fLABFractionCmd->
-		                                    GetNewDoubleValue(newValue));    
-	  
+    fGdDopedWbLSBuilder->SetLABFraction(fLABFractionCmd->
+                                        GetNewDoubleValue(newValue));    
+    
   }else if(command == fPPOFractionCmd)
   {
-  	fGdDopedWbLSBuilder->SetPPOFraction(fPPOFractionCmd->
+    fGdDopedWbLSBuilder->SetPPOFraction(fPPOFractionCmd->
                                         GetNewDoubleValue(newValue));
   
   }else if(command == fWaterFractionCmd)
   {
-  	fGdDopedWbLSBuilder->SetWaterFraction(fWaterFractionCmd->
-  	                                      GetNewDoubleValue(newValue));
+    fGdDopedWbLSBuilder->SetWaterFraction(fWaterFractionCmd->
+                                          GetNewDoubleValue(newValue));
   
   }else if (command == fGdFractionCmd)
   {
-  	fGdDopedWbLSBuilder->SetGdFraction(fGdFractionCmd->
-  	                                   GetNewDoubleValue(newValue));
+    fGdDopedWbLSBuilder->SetGdFraction(fGdFractionCmd->
+                                       GetNewDoubleValue(newValue));
   
   }  
   

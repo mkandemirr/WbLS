@@ -12,17 +12,16 @@ class GdDopedWbLSBuilder;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class GdDopedWbLSBuilderMessenger : public G4UImessenger {
-	public:
+  public:
     GdDopedWbLSBuilderMessenger(GdDopedWbLSBuilder*);
     ~GdDopedWbLSBuilderMessenger();
     
     void SetNewValue(G4UIcommand*, G4String) override;
 
-	private:
- 
- 		GdDopedWbLSBuilder* fGdDopedWbLSBuilder;
- 		
- 		G4UIcmdWithADouble* fLABFractionCmd;
+  private:
+    GdDopedWbLSBuilder* fGdDopedWbLSBuilder;
+     
+    G4UIcmdWithADouble* fLABFractionCmd;
     G4UIcmdWithADouble* fPPOFractionCmd;
     G4UIcmdWithADouble* fWaterFractionCmd;
     G4UIcmdWithADouble* fGdFractionCmd;

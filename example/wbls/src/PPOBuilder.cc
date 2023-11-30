@@ -26,8 +26,8 @@ G4Material* PPOBuilder::Build()
   ppo->AddElement(pNistManager->FindOrBuildElement("H"), 0.0501);
   ppo->AddElement(pNistManager->FindOrBuildElement("N"), 0.0633);
   ppo->AddElement(pNistManager->FindOrBuildElement("O"), 0.0723);
-	
-	return ppo;
+    
+  return ppo;
     
 }
 

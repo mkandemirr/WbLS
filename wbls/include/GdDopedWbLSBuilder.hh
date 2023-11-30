@@ -19,35 +19,35 @@ class GdDopedWbLSBuilder: public VMaterialBuilder{
     //user interface commands are defined but
     //any default macro file does not called.
     GdDopedWbLSBuilder(G4double labFraction,
-    									 G4double ppoFraction,
-    									 G4double waterFraction,
-    									 G4double gdFraction	
-    									 );		
-    									 
+                       G4double ppoFraction,
+                       G4double waterFraction,
+                       G4double gdFraction  
+                       );    
+                       
     virtual ~GdDopedWbLSBuilder();
     
-		//User Interface Commands
-		void SetLABFraction(G4double labFraction);
-		void SetPPOFraction(G4double ppoFraction);
-		void SetWaterFraction(G4double waterFraction);
-		void SetGdFraction(G4double gdFraction);
-	
-	protected:
+    //User Interface Commands
+    void SetLABFraction(G4double labFraction);
+    void SetPPOFraction(G4double ppoFraction);
+    void SetWaterFraction(G4double waterFraction);
+    void SetGdFraction(G4double gdFraction);
+  
+  protected:
     virtual G4Material* Build() override;
     
-	private:
-		void SetComponentsFractionWithAMacroFile();
-		void SetOpticalPropertiesWithAMacroFile();
-	  
-	  G4String mMacroFilePath;
-	  
-  	GdDopedWbLSBuilderMessenger* fMessenger;
-  	
-  	G4double fLABFraction;
-  	G4double fPPOFraction;
-  	G4double fWaterFraction;
-  	G4double fGdFraction;
-  	     
+  private:
+    void SetComponentsFractionWithAMacroFile();
+    void SetOpticalPropertiesWithAMacroFile();
+    
+    G4String mMacroFilePath;
+    
+    GdDopedWbLSBuilderMessenger* fMessenger;
+    
+    G4double fLABFraction;
+    G4double fPPOFraction;
+    G4double fWaterFraction;
+    G4double fGdFraction;
+         
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

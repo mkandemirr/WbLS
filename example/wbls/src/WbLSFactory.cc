@@ -19,7 +19,7 @@ VMaterialFactory()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 WbLSFactory::~WbLSFactory()
-{	
+{    
  
 }
 

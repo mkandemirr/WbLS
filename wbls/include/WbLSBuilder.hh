@@ -19,32 +19,32 @@ class WbLSBuilder: public VMaterialBuilder{
     //user interface commands are defined but
     //any default macro file does not called.
     WbLSBuilder(G4double labFraction, 
-    						G4double ppoFraction, 
-    						G4double waterFraction
-    					 ); 
+                G4double ppoFraction, 
+                G4double waterFraction
+               ); 
     
     virtual ~WbLSBuilder();
 
-		//User Interface Commands
-		void SetLABFraction(G4double labFraction);
-		void SetPPOFraction(G4double ppoFraction);
-		void SetWaterFraction(G4double waterFraction);
-		
-	protected:
+    //User Interface Commands
+    void SetLABFraction(G4double labFraction);
+    void SetPPOFraction(G4double ppoFraction);
+    void SetWaterFraction(G4double waterFraction);
+    
+  protected:
     virtual G4Material* Build() override;
     
-	private:
-		void SetComponentsFractionWithAMacroFile();
-		void SetOpticalPropertiesWithAMacroFile();
+  private:
+    void SetComponentsFractionWithAMacroFile();
+    void SetOpticalPropertiesWithAMacroFile();
     
     G4String mMacroFilePath;
-    	  
-  	WbLSBuilderMessenger* fMessenger;
-  	
-  	G4double fLABFraction;
-  	G4double fPPOFraction;
-  	G4double fWaterFraction;
-  	     
+        
+    WbLSBuilderMessenger* fMessenger;
+    
+    G4double fLABFraction;
+    G4double fPPOFraction;
+    G4double fWaterFraction;
+         
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
